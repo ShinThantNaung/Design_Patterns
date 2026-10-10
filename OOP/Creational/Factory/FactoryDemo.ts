@@ -1,0 +1,12 @@
+import { BMWFactory } from "./BMWFactory.ts";
+import { MercedesFactory } from "./MercedesFactory.ts";
+const BMWFact = new BMWFactory();
+const MercedesFact = new MercedesFactory();
+console.log("Delivering BMW");
+const bmw = BMWFact.createCar();
+bmw.drive();
+bmw.park();
+console.log("Delivering Mercedes");
+const mercedes = MercedesFact.createCar();
+mercedes.drive();
+mercedes.park();
